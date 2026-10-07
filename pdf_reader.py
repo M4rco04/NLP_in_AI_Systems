@@ -22,6 +22,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # data/hans_christian_andersen.pdf, 6, 125
+    # data/tom_sawyer.pdf, 5, 286
     book = read_pdf(args.pdf_path, args.start, args.end)
     book_clean = re.sub(r'[<>"\-()!?.,:\;\»\«]', '', book)
 
